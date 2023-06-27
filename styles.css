@@ -1,0 +1,267 @@
+header {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  max-width: 412px;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+}
+.page-header {
+  position: fixed;
+  width: 412px;
+  z-index: 100;
+  background-color: rgb(184, 213, 169);
+  border-radius: 0px 0px 24px 24px;
+}
+
+.container {
+  min-height: 100%;
+  position: relative;
+}
+
+footer {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav li a {
+  color: #333;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  margin: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.question {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.tags {
+  margin-bottom: 15px;
+}
+
+.tag {
+  display: inline-block;
+  background-color: #f1f1f1;
+  color: #333;
+  padding: 5px 10px;
+  border-radius: 24px;
+  margin-right: 5px;
+}
+
+.show-answer {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 24px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.show-answer:hover {
+  background-color: #0056b3;
+}
+.bookmark {
+  position: absolute;
+  top: -15px;
+  right: 2px;
+}
+
+.footer-list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-nav {
+  position: fixed;
+  bottom: 0;
+  background-color: rgb(184, 213, 169);
+  border-radius: 24px 24px 0px 0px;
+  padding: 20px;
+  width: 412px;
+  z-index: 100;
+}
+.about-me {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.profile-pic {
+  margin-top: 60px;
+}
+
+.profile-name {
+  margin-top: 90px;
+  padding-left: 40px;
+}
+
+.profile-text {
+  text-align: justify;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 40px;
+}
+
+h3 {
+  margin: 0px;
+}
+
+.spacer {
+  height: 100px;
+}
+
+.size {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.counters {
+  display: flex;
+  width: 50%;
+  gap: 1rem;
+}
+.counter {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(216, 245, 200);
+  border-radius: 18px;
+  border: none;
+  width: 100%;
+}
+.questions {
+  list-style: none;
+  padding: 5px;
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.toggle {
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  position: relative;
+  border-radius: 34px;
+  background-color: #ccc;
+  overflow: hidden;
+}
+
+.toggle input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #2196f3;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #ccc;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.settings {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 40px;
+  gap: 20px;
+}
+
+.switch {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.active {
+  color: white;
+}
+.answer {
+  padding-bottom: 20px;
+  font-weight: 300;
+}
